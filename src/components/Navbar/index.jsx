@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 relative">
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center">
-                        <h1 className="text-2xl font-bold text-red-600">QA</h1>
+                        <h1 className="text-2xl font-bold text-gradient-to-r from-[#1b0a37] to-[#24104f]">QA</h1>
                     </div>
 
                     <div className="hidden md:flex items-center bg-gray-100 rounded-md px-3 py-2">
@@ -39,7 +39,7 @@ const Navbar = () => {
                             <div key={index} className="relative group">
                                 <button
                                     onClick={() => toggleDropdown(index)}
-                                    className="flex items-center space-x-1 text-gray-700 hover:text-red-500"
+                                    className="flex items-center space-x-1 text-gray-700 hover:text-[#24104f]"
                                 >
                                     <span>{item.name}</span>
                                     {item.sublinks && <ChevronDown className="h-4 w-4" />}
@@ -63,10 +63,10 @@ const Navbar = () => {
 
                     {/* Login & Sign Up Buttons */}
                     <div className="hidden md:flex space-x-4">
-                        <a href="/login" className="px-4 py-2 border border-red-500 text-red-500 rounded-md hover:bg-red-50">
+                        <a href="/login" className="px-4 py-2 border border-[#24104f] text-[#24104f] rounded-md hover:bg-[#1b0a37] hover:text-white">
                             Login
                         </a>
-                        <a href="/signup" className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+                        <a href="/signup" className="px-4 py-2 bg-[#24104f] text-white rounded-md hover:bg-[#1b0a37]">
                             Sign Up
                         </a>
                     </div>
@@ -120,10 +120,10 @@ const Navbar = () => {
 
                         {/* Mobile Login & Sign Up Buttons */}
                         <div className="flex flex-col mt-4 p-4 border-t">
-                            <a href="/login" className="w-full text-center px-4 py-2 border border-red-500 text-red-500 rounded-md hover:bg-red-50">
+                            <a href="/login" className="w-full text-center px-4 py-2 border border-[#24104f] text-[#24104f] rounded-md hover:bg-[#1b0a37] hover:text-white">
                                 Login
                             </a>
-                            <a href="/signup" className="w-full text-center px-4 py-2 mt-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+                            <a href="/signup" className="w-full text-center px-4 py-2 mt-2 bg-[#24104f] text-white rounded-md hover:bg-[#1b0a37]">
                                 Sign Up
                             </a>
                         </div>
@@ -187,3 +187,4 @@ const menuItems = [
 ];
 
 export default Navbar;
+
