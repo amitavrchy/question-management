@@ -2,6 +2,7 @@
 import Banner from '@/components/Banner';
 import InfoCards from '@/components/InfoCards';
 import Navbar from '@/components/Navbar'
+import Testimonials from '@/components/Testimonials';
 import React from 'react'
 
 function HomePage() {
@@ -10,6 +11,7 @@ function HomePage() {
             <Navbar />
             <Banner />
             <InfoCards />
+            <Testimonials />
         </div>
     )
 }
