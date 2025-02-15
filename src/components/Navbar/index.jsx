@@ -61,6 +61,16 @@ const Navbar = () => {
                         ))}
                     </div>
 
+                    {/* Login & Sign Up Buttons */}
+                    <div className="hidden md:flex space-x-4">
+                        <a href="/login" className="px-4 py-2 border border-red-500 text-red-500 rounded-md hover:bg-red-50">
+                            Login
+                        </a>
+                        <a href="/signup" className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+                            Sign Up
+                        </a>
+                    </div>
+
                     <div className="md:hidden">
                         <button onClick={toggleMenu}>
                             {isOpen ? <X className="h-6 w-6 text-gray-700" /> : <Menu className="h-6 w-6 text-gray-700" />}
@@ -107,6 +117,16 @@ const Navbar = () => {
                                 )}
                             </div>
                         ))}
+
+                        {/* Mobile Login & Sign Up Buttons */}
+                        <div className="flex flex-col mt-4 p-4 border-t">
+                            <a href="/login" className="w-full text-center px-4 py-2 border border-red-500 text-red-500 rounded-md hover:bg-red-50">
+                                Login
+                            </a>
+                            <a href="/signup" className="w-full text-center px-4 py-2 mt-2 bg-red-500 text-white rounded-md hover:bg-red-600">
+                                Sign Up
+                            </a>
+                        </div>
                     </div>
                 )}
             </div>
@@ -167,56 +187,3 @@ const menuItems = [
 ];
 
 export default Navbar;
-
-
-// const menuItems = [
-//     {
-//         name: "ক্লাস ৪-১২",
-//         sublinks: [
-//             { name: "ক্লাস ৪", link: "/class-4" },
-//             { name: "ক্লাস ৫", link: "/class-5" },
-//             { name: "ক্লাস ৬", link: "/class-6" },
-//             { name: "ক্লাস ৭", link: "/class-7" },
-//             { name: "ক্লাস ৮", link: "/class-8" },
-//             { name: "ক্লাস ৯", link: "/class-9" },
-//             { name: "ক্লাস ১০", link: "/class-10" },
-//             { name: "ক্লাস ১১", link: "/class-11" },
-//             { name: "ক্লাস ১২", link: "/class-12" },
-//         ],
-//     },
-//     {
-//         name: "স্কিলস",
-//         sublinks: [
-//             { name: "প্রোগ্রামিং", link: "/programming" },
-//             { name: "ডিজাইন", link: "/design" },
-//             { name: "ডিজিটাল মার্কেটিং", link: "/marketing" },
-//             { name: "কনটেন্ট রাইটিং", link: "/content-writing" },
-//             { name: "ফ্রিল্যান্সিং", link: "/freelancing" },
-//             { name: "ভিডিও এডিটিং", link: "/video-editing" },
-//             { name: "SEO", link: "/seo" },
-//         ],
-//     },
-//     {
-//         name: "ভর্তি পরীক্ষা",
-//         sublinks: [
-//             { name: "বিশ্ববিদ্যালয় ভর্তি", link: "/university-admission" },
-//             { name: "বিসিএস প্রস্তুতি", link: "/bcs" },
-//             { name: "মেডিকেল ভর্তি", link: "/medical-admission" },
-//             { name: "ইঞ্জিনিয়ারিং ভর্তি", link: "/engineering-admission" },
-//         ],
-//     },
-//     {
-//         name: "অনলাইন ব্যাচ",
-//         sublinks: [
-//             { name: "বিজ্ঞান বিভাগ", link: "/science-batch" },
-//             { name: "ব্যবসা শিক্ষা", link: "/business-batch" },
-//         ],
-//     },
-//     {
-//         name: "ইংলিশ সেন্টার",
-//         sublinks: [
-//             { name: "স্পোকেন ইংলিশ", link: "/spoken-english" },
-//             { name: "আইইএলটিএস", link: "/ielts" },
-//         ],
-//     },
-// ];
