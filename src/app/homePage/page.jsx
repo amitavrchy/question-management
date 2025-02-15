@@ -1,6 +1,7 @@
 "use client";
 import Banner from '@/components/Banner';
 import Counter from '@/components/Counter';
+import FAQ from '@/components/FAQ';
 import InfoCards from '@/components/InfoCards';
 import Navbar from '@/components/Navbar'
 import Testimonials from '@/components/Testimonials';
@@ -14,6 +15,7 @@ function HomePage() {
             <InfoCards />
             <Testimonials />
             <Counter />
+            <FAQ />
         </div>
     )
 }
