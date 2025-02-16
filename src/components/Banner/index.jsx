@@ -19,7 +19,7 @@ const Banner = () => {
         {/* Left Side: Text */}
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-blue-400 to-purple-500 text-gray-200 bg-clip-text drop-shadow-lg">
-            ভবিষ্যতের শিক্ষা,<br className="hidden md:inline" /> এক ক্লিকে!
+          দেশের প্রথম স্মার্ট এবং কাগজবিহীন<br className="hidden md:inline" /> প্রশ্নবতস!
           </h1>
           <p className="mt-6 text-lg text-gray-300 leading-relaxed">
             প্রযুক্তির সাথে তাল মিলিয়ে শেখার নতুন অভিজ্ঞতা উপভোগ করুন।<br /> 
